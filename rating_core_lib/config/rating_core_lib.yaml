@@ -1,0 +1,3 @@
+core_lib:
+  alembic:
+    version_table: conversation_alembic_version
