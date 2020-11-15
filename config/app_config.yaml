@@ -1,0 +1,9 @@
+defaults:
+  - core_lib
+  - rating_core_lib
+
+core_lib_module: rating_core_lib
+
+hydra:
+  run:
+    dir: .

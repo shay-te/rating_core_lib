@@ -1,0 +1,5 @@
+# @package _global_
+defaults:
+  - core_lib
+#  - rating_core_lib
+  - test_rating_core_lib

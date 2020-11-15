@@ -1,3 +1,15 @@
+# @package _global_
 core_lib:
   alembic:
-    version_table: conversation_alembic_version
+    version_table: rating_alembic_version
+
+  data:
+    sqlalchemy:
+      log_queries: false
+      url:
+        protocol: mysql
+        username: ${env:MYSQL_USER}
+        password: ${env:MYSQL_PASSWORD}
+        host: ${env:MYSQL_HOST}
+        port: 3306
+        file: ${env:MYSQL_DB}
