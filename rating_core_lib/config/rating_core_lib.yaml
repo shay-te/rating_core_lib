@@ -7,9 +7,9 @@ core_lib:
     sqlalchemy:
       log_queries: false
       url:
-        protocol: mysql
-        username: ${env:MYSQL_USER}
-        password: ${env:MYSQL_PASSWORD}
-        host: ${env:MYSQL_HOST}
-        port: 3306
-        file: ${env:MYSQL_DB}
+        protocol: postgres
+        username: ${env:POSTGRES_USER}
+        password: ${env:POSTGRES_PASSWORD}
+        host: ${env:POSTGRES_HOST}
+        port: ${env:POSTGRES_PORT}
+        file: ${env:POSTGRES_DB}
