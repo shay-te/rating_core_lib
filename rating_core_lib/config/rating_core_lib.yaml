@@ -7,9 +7,9 @@ core_lib:
     sqlalchemy:
       log_queries: false
       url:
-        protocol: postgres
-        username: ${env:POSTGRES_USER}
-        password: ${env:POSTGRES_PASSWORD}
-        host: ${env:POSTGRES_HOST}
-        port: ${env:POSTGRES_PORT}
-        file: ${env:POSTGRES_DB}
+        protocol: postgresql
+        username: ${oc.env:POSTGRES_USER}
+        password: ${oc.env:POSTGRES_PASSWORD}
+        host: ${oc.env:POSTGRES_HOST}
+        port: ${oc.env:POSTGRES_PORT}
+        file: ${oc.env:POSTGRES_DB}

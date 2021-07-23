@@ -16,4 +16,4 @@ class Rating(Base, TimeStampMixin):
     target_type = Column(Integer, nullable=False)
     rating_value = Column(Integer)
 
-    __table_args__ = (Index(INDEX_USER_TO_TARGET, user_id.key, target_id.key, unique=False),)
+    __table_args__ = (Index(INDEX_USER_TO_TARGET, 'user_id', 'target_id', unique=False),)
