@@ -10,4 +10,7 @@
 **/*.pyo
 **/__pycache__/*
 __pycache__/
+dist/
+build/
+core_lib.egg-info/
 
