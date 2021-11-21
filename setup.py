@@ -1,10 +1,10 @@
 import os
 
-import core_lib
-
 from setuptools import find_namespace_packages, setup, find_packages
 from pip._internal.network.session import PipSession
 from pip._internal.req import parse_requirements
+
+import rating_core_lib
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 install_reqs = parse_requirements(os.path.join(dir_path, 'requirements.txt'), session=PipSession)
@@ -17,8 +17,8 @@ with open('README.md', 'r') as fh:
    long_description = fh.read()
 
    setup(
-      name='core-lib',
-      version=core_lib.__version__,
+      name='rating_core_lib',
+      version=rating_core_lib.__version__,
       author='Shay Tessler',
       author_email='shay.te@gmail.com',
       description='General rating library',

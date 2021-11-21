@@ -12,5 +12,4 @@
 __pycache__/
 dist/
 build/
-core_lib.egg-info/
-
+rating_core_lib.egg-info
