@@ -1,10 +1,10 @@
 from sqlalchemy import Integer, Column, Index
 
 from core_lib.data_layers.data.db.sqlalchemy.base import Base
-from core_lib.data_layers.data.db.sqlalchemy.mixins.time_stamp_mixin import TimeStampMixin
+from core_lib.data_layers.data.db.sqlalchemy.mixins.soft_delete_mixin import SoftDeleteMixin
 
 
-class Rating(Base, TimeStampMixin):
+class Rating(Base, SoftDeleteMixin):
 
     __tablename__ = 'rating'
 
