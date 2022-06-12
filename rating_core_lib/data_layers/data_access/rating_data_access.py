@@ -1,13 +1,13 @@
 from datetime import datetime
 
-from core_lib.data_layers.data.handler.sql_alchemy_data_handler_registry import SqlAlchemyDataHandlerRegistry
+from core_lib.connection.sql_alchemy_connection_registry import SqlAlchemyConnectionRegistry
 from core_lib.data_layers.data_access.data_access import DataAccess
 from rating_core_lib.data_layers.data.db.entities.rating import Rating
 
 
 class RatingDataAccess(DataAccess):
 
-    def __init__(self, db: SqlAlchemyDataHandlerRegistry):
+    def __init__(self, db: SqlAlchemyConnectionRegistry):
         self.db = db
 
     def rate(self, user_id: int, target_id: int, target_type: int, rating_value: int = None):
